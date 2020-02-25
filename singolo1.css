@@ -38,7 +38,7 @@ h1 {
     list-style-type: none; 
 }
 .nav ul li a {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 6px;
     color: #ffffff;
     font-family: 'Lato', sans-serif;
@@ -75,7 +75,7 @@ h1 {
     background-image: url('assets/Bg.png');
     width: 1020px;
     min-height: 600px;
-    border-bottom: 15px solid #ea676b; 
+    border-bottom: 6px solid #ea676b; 
 }
 .iphonehoriz {
         position: relative;
@@ -117,12 +117,14 @@ position: relative;
     width: 1020px;
 }
 
-
+.footer {
+    background-color:  #f2f2f2;
+}
 .wrapper {
 padding: 0;
 width: 1020px;
 min-height: 496px;
-background-color:  #ffffff;
+///background-color:  #f2f2f2;
 border-bottom: 6px solid #ffffff;
 padding-bottom: 68px
 }
