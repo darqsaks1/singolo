@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/LatoRegular/LatoRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
 body {
     margin: 0;
 }
@@ -17,11 +23,14 @@ h2 {
 .porfolio_head {
     font-size: 30px;
     font-size: 30px;
-    line-height: 18px;
+    line-height: 30px;
     color: #666d89;
     font-family: "Lato";
     font-weight: 900;
     padding: 70px 0 0 40px;
+    position: relative;
+    top: -4px;
+   
 }
 .porfolio_headtext {
     font-size: 18px;
@@ -30,14 +39,35 @@ h2 {
     font-family: "Lato";
     font-weight: 300;
     padding: 2px 0 0 40px;
+    position: relative;
+    top: -13px;
 }
 .navigation_buttons {
     position: relative;
-    top: -8px;
+    top: -20px;
     margin-left: 40px;
     margin-bottom: px;
 }
-
+.button1 {
+    position: relative;
+    top: -1px;
+    right: 4px;
+}
+.button2 {
+    position: relative;
+    top: -1px;
+    right: 4px;
+}
+.button3 {
+    position: relative;
+    top: -1px;
+    right: 8px;
+}
+.button4 {
+    position: relative;
+    top: -1px;
+    right: 8px;
+}
 .navigation_buttons button {
     border-radius: 5px;
     background-color: transparent;
@@ -59,6 +89,8 @@ h2 {
         align-content: space-between;
         height: 600px;
         overflow: hidden;
+        position: relative;
+        top: -10px;
     }    
 .colunnum > img {
         width: 220px;
@@ -69,6 +101,8 @@ h2 {
 .bottomline {
     height: 6px;
     background-color: #323746;
+    position: relative;
+    top: px;
 }
 .about-us-wrapper {
     height:740px;
@@ -83,6 +117,8 @@ h2 {
     font-family: "Lato";
     font-weight: 900;
     padding: 70px 0 0 40px;
+    position: relative;
+    top: 0px;
 }   
 .aboutUsText {
     width: 940px;
@@ -92,12 +128,18 @@ h2 {
     color: #767e9e;
     font-family: "Lato";
     font-weight: 300;
-    padding: 25px 0 0 30px;
-    letter-spacing: 0.008em;
+    padding: 10px 0 0 40px;
+    letter-spacing: -1px;
+    text-align: justify; 
+    word-spacing: 5px;
     position: relative;
-    top: -20px;
+    top: -6px;
 }
-        .about-us-columns {
+
+span {
+    word-spacing: 5px
+}
+.about-us-columns {
             overflow: hidden;
             margin: 48px 40px 0px 40px;
             display: flex;
@@ -107,10 +149,10 @@ h2 {
             align-content: space-between;
             height: 510px;
             position: relative;
-            top: -20px;
+            top: -8px;
         }
         
-        .about-us-columns > div {
+  .about-us-columns > div {
             width: 303px;
             height: 510px;
         }
@@ -125,11 +167,12 @@ h2 {
             border: 1px solid #666d89;
         }
         
-        .ico-facebook:hover {
-            background-color: #eb5055;
+        .ico-facebook:hover {;
             transition: 0.3s;
             background-image: url(./assets/facebook-hover.svg);
             cursor: pointer;
+            border-radius: 16px;
+            border: 1px solid orange;
         }
         
         .ico-google {
@@ -143,7 +186,8 @@ h2 {
         }
         
         .ico-google:hover {
-            background-color: #eb5055;
+            border-radius: 16px;
+            border: 1px solid red;
             transition: 1s;
             background-image: url(./assets/google-hover.svg);
             cursor: pointer;
@@ -160,7 +204,8 @@ h2 {
         }
         
         .ico-twitter:hover {
-            background-color: #eb5055;
+            border-radius: 16px;
+            border: 1px solid yellow;;
             transition: 0.5s;
             background-image: url(./assets/twitter-hover.svg);
             cursor: pointer;
@@ -177,7 +222,8 @@ h2 {
         }
         
         .ico-linkedin:hover {
-            background-color: #eb5055;
+            border-radius: 16px;
+            border: 1px solid  green;
             transition: 1s;
             background-image: url(./assets/linkedin-hover.svg);
             cursor: pointer;
@@ -193,7 +239,7 @@ h2 {
             padding-top: 16px;
             letter-spacing: -0.007em;
             position: relative;
-            top: -20px;
+            top: -18px;
         }
         
         .about-us-text {
@@ -246,3 +292,24 @@ h2 {
             position: relative;
             bottom: 10px;
         }
+
+.button1:hover {
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.button2:hover {
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.button3:hover {
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.button4:hover {
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
