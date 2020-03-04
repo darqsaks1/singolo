@@ -167,7 +167,7 @@ span {
             border: 1px solid #666d89;
         }
         
-        .ico-facebook:hover {;
+        .ico-facebook:hover {
             transition: 0.3s;
             background-image: url(./assets/facebook-hover.svg);
             cursor: pointer;
