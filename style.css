@@ -1,7 +1,8 @@
 
 html {
     width: 1020px;
-    margin: 0 auto
+    margin: 0 auto;
+    height: 3528;
 }
 .header { 
     background-image: url('assets/blackheader.png');
@@ -90,6 +91,10 @@ position: relative;
 }
 .left:hover {
     cursor: cell;
+    transform: rotate(180deg);
+    padding: 10px;
+    background-image: url(assets/star.png);
+    background-repeat: no-repeat;
 }
 .right {
 position: relative;
@@ -97,10 +102,13 @@ position: relative;
    left: 210px;
 }
 .right:hover {
-    cursor: cell;
+    cursor: cell; transform: rotate(180deg);
+    padding: 10px;
+    background-image: url(assets/star.png);
+    background-repeat: no-repeat;
 }
-.bottomline {
-    **// border: 5px solid black;
+.\\\bottomline {
+border: px solid black;
     position: relative;
    top: 110px;
   width: 1020px;
@@ -115,13 +123,14 @@ position: relative;
 
 .footerone {
     background-color:  #f2f2f2;
+    border-bottom: 6px solid white;
 }
 .wrapperHTML1 {
 padding: 0;
 width: 1020px;
 min-height: 496px;
 ///background-color:  #f2f2f2;
-border-bottom: 6px solid #ffffff;
+
 padding-bottom: 68px
 }
 
@@ -239,9 +248,7 @@ bottom: 5px;
     position: relative;
     left: -3px;
 }
-
-
-
+________________________________________
 
 @font-face {
     font-family: 'Lato';
@@ -274,7 +281,7 @@ h2 {
     font-weight: 900;
     padding: 70px 0 0 40px;
     position: relative;
-    top: -4px;
+    top: -10px;
    
 }
 .porfolio_headtext {
@@ -285,11 +292,11 @@ h2 {
     font-weight: 300;
     padding: 2px 0 0 40px;
     position: relative;
-    top: -13px;
+    top: px;
 }
 .navigation_buttons {
     position: relative;
-    top: -20px;
+    top: 10px;
     margin-left: 40px;
     margin-bottom: px;
 }
@@ -335,7 +342,7 @@ h2 {
         height: 600px;
         overflow: hidden;
         position: relative;
-        top: -10px;
+        top: 20px;
     }    
 .colunnum > img {
         width: 220px;
@@ -354,6 +361,7 @@ h2 {
     justify-content: center;
     padding-bottom: 63px;
     background-color: #f2f2f2;
+ 
 }
 .aboutUsLogo {
     font-size: 30px;
@@ -363,7 +371,7 @@ h2 {
     font-weight: 900;
     padding: 70px 0 0 40px;
     position: relative;
-    top: 0px;
+    top: -3px;
 }   
 .aboutUsText {
     width: 940px;
@@ -376,9 +384,11 @@ h2 {
     padding: 10px 0 0 40px;
     letter-spacing: -1px;
     text-align: justify; 
-    word-spacing: 5px;
+    word-spacing: 4px;
     position: relative;
-    top: -6px;
+    top: 3px;
+    text-align: justify;
+
 }
 
 span {
@@ -394,9 +404,12 @@ span {
             align-content: space-between;
             height: 510px;
             position: relative;
-            top: -8px;
+            top: -30x;
         }
-        
+.imgAboutUs {
+    position: relative;
+    top: -5px;
+}     
   .about-us-columns > div {
             width: 303px;
             height: 510px;
@@ -428,12 +441,72 @@ span {
             height: 32px;
             border-radius: 16px;
             border: 1px solid #666d89;
+            left: px;
         }
-        
-        .ico-google:hover {
-            border-radius: 16px;
-            border: 1px solid red;
-            transition: 1s;
+#twitter1 {
+    position: relative;
+    left: 5px;
+    top: px;
+}       
+#google1 {
+    position: relative;
+    left: 3px;
+}
+#facebook1 {
+    position: relative;
+    left: 0px;
+}
+#linkedin1 {
+    position: relative;
+    left: 6px;
+}
+
+
+#twitter2 {
+    position: relative;
+    left: 5px;
+}       
+#google2 {
+    position: relative;
+    left: 5px;
+}
+#facebook2 {
+    position: relative;
+    left: 2px;
+}
+#linkedin2 {
+    position: relative;
+    left: 6px;
+    ;
+}
+
+
+#twitter3 {
+    position: relative;
+    left: 5px;
+}       
+#google3 {
+    position: relative;
+    left: 5px;
+}
+#facebook3 {
+    position: relative;
+    left: 2px;
+}
+#linkedin3 {
+    position: relative;
+    left: 6px;
+    ;
+}
+.fuckingwhiteline {
+    border: 10px solid black;
+}
+
+
+   .ico-google:hover {
+    border-radius: 16px;
+     border: 1px solid red;
+  transition: 1s;
             background-image: url(./assets/google-hover.svg);
             cursor: pointer;
         }
@@ -484,7 +557,7 @@ span {
             padding-top: 16px;
             letter-spacing: -0.007em;
             position: relative;
-            top: -18px;
+            top: -3px;
         }
         
         .about-us-text {
@@ -499,7 +572,7 @@ span {
             padding-top: 10px;
             letter-spacing: -0.006em;
             position: relative;
-            top: -50px;
+            top: -2px;
         }
         .person-1, .person-2, .person-3 {
             display: flex;
@@ -508,6 +581,7 @@ span {
             justify-content: flex-start;
             align-items: flex-start;
             position: relative;
+            top: 15px;
            
         }
         .icons {
@@ -523,6 +597,9 @@ span {
         
         .social-icons {
             margin-left: 6px;
+            position: relative;
+            bottom: -60px;
+            left:10px;
         }
         
         .social-icons:first-child {
@@ -569,6 +646,8 @@ body {
     width: 1020px;
     height: 648px;
     background-color: #f06c64;
+    border-top: 6px solid white;
+    margin-bottom: px;
 }
 
 .quoteContent h1 {
@@ -578,11 +657,11 @@ body {
     font-family: "Lato";
     font-weight: 900;
     text-align: left;
-    padding: 68px 0 0 40px;
+    padding: 60px 0 0 40px;
 }
 
 .quoteContent p {
-    width: 940px;
+    width: 980px;
     height: 57px;
     font-size: 18px;
     line-height: 30px;
@@ -591,6 +670,7 @@ body {
     font-weight: 300;
     text-align: justify;
     padding: 27px 0 0 40px;
+    
 }
 
 .content {
@@ -604,6 +684,8 @@ body {
     width: 620px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    bottom: -50px;
 }
 
 ::placeholder {
@@ -618,7 +700,7 @@ body {
 
 .form input {
     width: 615px;
-    height: 33px;
+    height: 37px;
     border-radius: 5px;
     border-color: #d6564f;
     background-color: #d6564f;
@@ -664,6 +746,7 @@ body {
     width: 300px;
     height: 200px;
     margin-left: 20px;
+    margin-bottom: px;
 }
 
 .contact h2 {
@@ -673,7 +756,9 @@ body {
     font-family: "Lato";
     font-weight: 900;
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    position: relative;
+    top: 26px;
 }
 
 .contact p {
@@ -687,6 +772,8 @@ body {
     text-align: justify;
     padding: 0;
     margin-bottom: 17px;
+    position: relative;
+    top: -5px;
 }
 
 .contact ul li a {
@@ -697,6 +784,8 @@ body {
     font-weight: 400;
     text-align: left;
     text-decoration: none;
+    position: relative;
+    top: -5px;
 }
 
 .contact ul li a:focus {
@@ -770,4 +859,25 @@ input:hover {
     border: 1px solid white;
     border-radius: 50%;
     background-image: url(/assets/iPhonehoriz.png);
+}
+.textInput {
+    position: relative;
+    top: -20px;
+}
+.emailInput {
+    position: relative;
+    top: -20px;
+}
+.subjectInput {
+    position: relative;
+    top: -20px;
+}
+.textAreaInput {
+    position: relative;
+    top: -20px;
+}
+
+.iconFooter {
+    position: relative;
+    top: -5px;
 }
