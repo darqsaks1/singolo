@@ -714,6 +714,7 @@ body {
     border-radius: 5px;
     border-color: #d6564f;
     background-color: #d6564f;
+    resize: none;
 }
 
 .form button {
