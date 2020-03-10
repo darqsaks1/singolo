@@ -344,6 +344,7 @@ h2 {
         overflow: hidden;
         position: relative;
         top: 20px;
+        overflow: hidden;
     }    
 .colunnum > img {
         width: 220px;
