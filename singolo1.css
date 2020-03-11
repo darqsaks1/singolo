@@ -146,7 +146,7 @@ margin-top: 50px;
 margin-bottom: 15px;
 margin-left: -20px;
 padding: 20px;
-
+overflow: hidden;
 }
 
 .footer-text {
@@ -156,6 +156,7 @@ font-weight: 300;
 line-height: 1.7;
 text-align: justify;
 }
+
 .footer_grid {
 margin-top: 22px;
 margin-left: -5px;
