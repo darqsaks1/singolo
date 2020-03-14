@@ -975,12 +975,11 @@ input:hover {
 
   .activePortfolio {
       border: 5px solid #F06C64;
-      padding: 2px;
-      position: relative;
   }
 button.activeButton {
       color: white;
       border-color:white;
+      box-sizing: content-box;
   }
   
 .buttonsUl {
