@@ -11,30 +11,51 @@
   <div class ="logo">
     <h1 class='firstlogo'><strong>SINGOLO</strong><span id = "star">*</span></h1>
   </div>
-<nav class="nav1">
-    <ul>
-        <li><span class="dot empty"></span><a href="#">home</a></li>
-        <li><span class="dot"></span><a href="#">services</a></li>
-        <li><span class="dot"></span><a href="#">portfolio</a></li>
-        <li><span class="dot"></span><a href="#">about</a></li>
-        <li><span class="dot"></span><a href="#">contact</a></li>
+<nav class="nav1 js-menu">
+    <ul id = 'menuUl'>
+        <li ><span class="dot empty"></span><a href="#slider" class='active'>home</a></li>
+        <li><span class="dot"></span><a href="#services">services</a></li>
+        <li><span class="dot"></span><a href="#portfolio">portfolio</a></li>
+        <li><span class="dot"></span><a href="#about">about</a></li>
+        <li><span class="dot"></span><a href="#contact">contact</a></li>
     </ul>
 </nav>
 
 </header>
 <main>
-  <div class = mainHTMLone>
-        <img class = 'bottomheader' src='assets/Header Bottom.png'>
-        <img class = 'iphonevertical' src='assets/iPhonevert.png'>
-        <img class = 'iphonehoriz' src='assets/iPhonehoriz.png'>
-        <a href='#'><img class = 'left' src='assets/left.png'></a>
-        <a href='#'><img class = 'right' src='assets/right.png'></a>
+  
+  <section class="slider" id="slider"> 
+    <img
+      src="assets/left.png"
+      alt="t"id="sliderLeft" class="slider_control_left"/> 
+    <img
+      src="assets/right.png"
+      alt="sht" id="sliderRight" class="slider_control_right"/>
+<div class="slide1" id="slide1">
+
+  
+  <div class="slider_images">
+    <img
+      src="assets/iPhonevert.png"
+      class="vertical_phone"
+      alt="vertical phone" id="imgVertical"
+    />
+    <img
+      src="assets/iPhonehoriz.png"
+      class="horisontal_phone"
+      alt="horisontal phone" id="imgHorizontal"
+    />
   </div>
+  
+<div class="black_screen_horizont" id="blackHorisont"></div>
+<div class="black_screen_vertical" id="blackVertical"></div>
+
+</section>
 <section>
 <div class='footerone'>
   <div class="wrapperHTML1">
     <div class="footer_inner">
-      <div class="footer_title">
+      <div class="footer_title" id = 'services'>
       Our Services
       </div>
       <div class="footer-text">
@@ -123,33 +144,39 @@
 <div class='wrapper'>
   <div class='wrapper_portfolio'>
       <div class=porfolio_promo>
-          <h2 class='porfolio_head'>Portfolio</h1> 
+          <h2 class='porfolio_head' id='portfolio'>Portfolio</h1> 
           <p class='porfolio_headtext'>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-          <div class='navigation_buttons'>
-              <button class="button button1" type="button">All</button>
-              <button class="button button2" type="button">Web Design</button>
-              <button class="button button3" type="button">Graphic Design</button>
-              <button class="button button4" type="button">Artwork</button>
+          <nav class='navigation_buttons' id='porfolio_head1'>
+            <button class="button button1 activeButton" >All</button>
+            <button class="button button2">Web Design</button>
+            <button class="button button3">Graphic Design</button>
+            <button class="button button4">Artwork</button>
+          </nav>
+        <div class="portfolio__gallery">
+          <div class="layout-4-column" id="gallery">
+              <img src="assets/portfolio1.png"  alt='1'class='gallery__img'>
+              <img src="assets/portfolio2.png" alt='2'class='gallery__img'>
+              <img src="assets/portfolio3.png" alt='3'class='gallery__img'>
+              <img src="assets/portfolio4.png" alt='4'class='gallery__img'>
+            </div>
+            <div class="layout-4-column" id="gallery">
+              <img src="assets/portfolio5.png" alt='5'class='gallery__img'>
+              <img src="assets/portfolio6.png" alt='6'class='gallery__img'>
+              <img src="assets/portfolio7.png" alt='7'class='gallery__img'>
+              <img src="assets/portfolio8.png" alt='8'class='gallery__img'>
+            </div>
+            <div class="layout-4-column" id="gallery">
+              <img src="assets/portfolio9.png" alt='9' class='gallery__img'>
+              <img src="assets/portfolio10.png" alt='10' class='gallery__img'>
+              <img src="assets/portfolio11.png" alt='11' class='gallery__img'>
+              <img src="assets/portfolio12.png" alt='12' class='gallery__img'>
           </div>
-      </div>
-      <div class='colonnum'>
-              <img src="assets/left1.png" alt='1'class='img1'>
-              <img src="assets/center1.png" alt='2'class='img1'>
-              <img src="assets/centerx1.png" alt='3'class='img1'>
-              <img src="assets/right1.png" alt='4'class='img1'>
-              <img src="assets/left2.png" alt='5'class='img1'>
-              <img src="assets/center2.png" alt='6'class='img1'>
-              <img src="assets/centerx2.png" alt='7'class='img1'>
-              <img src="assets/right2.png" alt='8'class='img1'>
-              <img src="assets/left3.png" alt='9class='img1''>
-              <img src="assets/center3.png" alt='10'>
-              <img src="assets/centerx3.png" alt='11'>
-              <img src="assets/right3.png" alt='12'>
+        </div>
       </div>
   </div>
               <div class='bottomline'></div>
    <div class="about-us-wrapper">
-                  <h2 class="aboutUsLogo">About Us</h2>
+                  <h2 class="aboutUsLogo" id = 'about'>About Us</h2>
                       <p class="aboutUsText">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, 
                           nisi erat porttitor <span>ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</span></p>
                   <div class="about-us-columns">
@@ -210,13 +237,21 @@
       <form class="form" action="#" method="post">
           <input type="text" name="username"  class='textInput' placeholder="Name (Required)" required>
           <input type="email" name="email-address" class='emailInput' placeholder="Email (Required)" required>
-          <input type="text" name="subject"  class='subjectInput' placeholder="Subject">
+          <input type="text" name="subject"  class='subjectInput' id='form-subject' placeholder="Subject">
           <textarea name="  " id="textarea" cols="30" rows="10"  class='textAreaInput' placeholder="Describe your project in detail..."></textarea>
-          <button name="submit">
+          <button name="submit" id='form__submit'>
               <strong>Submit</strong>
           </button>
       </form>
-      <div class="contact">
+      <div id="popup" class="hidden">
+        <div id="popup-content">
+          <p>Письмо отправлено</p>
+          <p id="popup-tema">Без темы</p>
+          <p id="popup-description">Без описания</p>
+          <button class="btn" id="close-btn">OK</button>
+     </div>
+    </div>
+          <div class="contact" id ='contact'>
           <h2>Contact Information</h2>
           <p>Quisque hendrerit purus dapibus, ornare nibh vitae,
           viver-ra nibh. Fusce vitae aliquam tellus. Proin sit amet 
@@ -245,6 +280,6 @@
       </div>
   </div>
 </footer>
-
+<script src='script.js'></script>
 </body>  
 </html>
