@@ -1,1 +1,1 @@
-darqsaks.github.io/singolo
+https://darqsaks1.github.io/singolo/
