@@ -109,7 +109,9 @@ const TEMA = document.getElementById('popup-tema');
 const DESCRIPTION = document.getElementById('popup-description'),
       FORM_SUBJECT = document.getElementById('form-subject'),
       FORM_DESC = document.getElementById('textarea');
-
+      MANE = document.getElementById('mane');
+      MANE1 = document.getElementById('mane1');
+      pClass = document.getElementById('oppasity')
 SUBMIT.addEventListener('click', event => {
   if (FORM_SUBJECT.value !== '' ) {
     TEMA.textContent = `Тема: ${FORM_SUBJECT.value}`; 
@@ -117,8 +119,33 @@ SUBMIT.addEventListener('click', event => {
   if (FORM_DESC.value !== '' ) {
     DESCRIPTION.textContent =  `Описание: ${FORM_DESC.value}`;
   }
+  if (MANE.value == '')  {
+    pClass.classList.remove('oppasity'); 
+    MESSAGE.classList.remove('hidden')
+  } 
+  if (MANE.value !== '')  {
+     pClass.classList.add('oppasity');
+     MESSAGE.classList.remove('hidden');
+}
 
+if (MANE1.value == '')  {
+  pClass.classList.remove('oppasity'); 
   MESSAGE.classList.remove('hidden');
+} 
+if (MANE1.value !== '')  {
+   pClass.classList.add('oppasity');
+   MESSAGE.classList.remove('hidden');
+}
+
+if (MANE.value == '' || MANE1.value == '') {
+  MESSAGE.classList.add('hidden');
+}
+if (MANE1.value !== '' && MANE.value == '') {
+  MESSAGE.classList.add('hidden');
+  pClass.classList.remove('oppasity');  
+}
+
+
   FORM_SUBJECT.value = '';
   FORM_DESC.value = '';
 })
@@ -128,3 +155,6 @@ CLOSE_BTN.addEventListener('click', event => {
   DESCRIPTION.textContent = 'Без описания';
   MESSAGE.classList.add('hidden');
 })
+
+
+

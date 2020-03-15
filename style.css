@@ -306,6 +306,12 @@ h2 {
 .gallery__img:nth-child(n + 5) {
     display: none;
   }
+.layout-4-column:nth-child(2) {
+    margin-right: 30px;
+} 
+.layout-4-column:nth-child(3) {
+    margin-right: 30px;
+} 
   
   .portfolio__gallery {
     margin-top: 30px;
@@ -315,16 +321,19 @@ h2 {
   .layout-4-column {
     display: flex;
     padding-top: 20px;
+    justify-content: space-between;
   }
   
   .layout-4-column:first-child {
     padding: 0;
+    margin-right: 30px;
   }
   
-  .gallery__img {
-    margin-left: 20px;
-    cursor: default;
-    box-sizing: border-box;
+.gallery__img {
+     cursor: default;
+  box-sizing: border-box;
+  width: 220px;
+  height: 187px; 
     
   }
 
@@ -874,8 +883,10 @@ input:hover {
     position: fixed;
     top: 0;
     width: 1020; 
+    height: 50px;
     margin: auto;
     z-index: 1;
+   
   }
 
 #jsiphone {
@@ -974,12 +985,16 @@ input:hover {
 
 
   .activePortfolio {
-      border: 5px solid #F06C64;
+ border: 5px solid #F06C64;
+  transition: border 0.5 s;
+  box-sizing: border-box;
+
   }
 button.activeButton {
       color: white;
       border-color:white;
       box-sizing: content-box;
+      transition: color 5s;
   }
   
 .buttonsUl {
@@ -1029,4 +1044,26 @@ button.activeButton {
 #close-btn:hover {
     overflow: hidden;
     opacity: 0;
+}
+
+
+p.notSubmit {
+    padding: 10px;
+    border: 1px solid rgb(99,109,139);
+    font-size: 20px;
+    color: rgb(99,109,139);
+    font-family: "Lato";
+    margin-top: 14px;
+    font-weight: bold;
+    position: relative;
+    bottom:80px;
+    width: 300px;
+    text-align: center;;
+    background-color:;
+}
+p.notSubmit:hover {
+    opacity: 0;
+}
+p.oppasity {
+   display: none
 }

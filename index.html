@@ -235,13 +235,15 @@
   condimentum nibh.</p>
   <div class="content">
       <form class="form" action="#" method="post">
-          <input type="text" name="username"  class='textInput' placeholder="Name (Required)" required>
-          <input type="email" name="email-address" class='emailInput' placeholder="Email (Required)" required>
+          <input type="text" name="username"  class='textInput' id='mane' placeholder="Name (Required)" required>
+          <input type="email" name="email-address" class='emailInput' id='mane1' placeholder="Email (Required)" required>
           <input type="text" name="subject"  class='subjectInput' id='form-subject' placeholder="Subject">
           <textarea name="  " id="textarea" cols="30" rows="10"  class='textAreaInput' placeholder="Describe your project in detail..."></textarea>
           <button name="submit"  onclick="event.preventDefault()" id='form__submit'>
               <strong>Submit</strong>
           </button>
+          <p class = 'notSubmit oppasity' id='oppasity'>Отсутсвует NAME либо EMAIL</p>
+          
       </form>
       <div id="popup" class="hidden">
         <div id="popup-content">
