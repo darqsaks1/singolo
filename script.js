@@ -5,9 +5,6 @@ MENU.addEventListener('click', (event) => {
    MENU.querySelectorAll('a').forEach(el => el.classList.remove('active'));
     event.target.classList.add('active'); 
 });
-
-///
-
 //scroll- header
  window.onscroll = function() {myFunction()};
 let header = document.querySelector(".header");
@@ -19,13 +16,30 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 } 
+// scrol active
+document.addEventListener('scroll', onScroll);
 
+function onScroll(event) {
+  const curPos = window.scrollY;
+  const divs = document.querySelectorAll('.navigation');
+  const links = document.querySelectorAll('#menuUl a');
+
+  divs.forEach ((el) => {
+    if (el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > curPos) {
+      links.forEach((a) => {
+        a.classList.remove('active');
+        if(el.getAttribute('id') === a.getAttribute('href').substring(1)) {
+          a.classList.add('active');
+        }
+      })
+    }
+  });
+}
 //slider black
-
 const blackVertical = document.getElementById("blackVertical");
 const blackHorisont = document.getElementById("blackHorisont");
-const imgVertical = document.getElementById("imgVertical");
-const imgHorizontal = document.getElementById("imgHorizontal");
+const imgVertical = document.querySelector(".vert");
+const imgHorizontal = document.querySelector(".first1w");
 let countVerticalPhone = 1;
 let countHorizontalPhone = 1;
 
@@ -53,25 +67,62 @@ blackHorisont.addEventListener("click", event => {
 });
 
 // slider corusel corusel eto radost dlya nas!
+let items = document.querySelectorAll('.item');
+let currentItem = 0;
+let isEnabled = true;
 
-const sliderLeft = document.getElementById("sliderLeft");
-const sliderRight = document.getElementById("sliderRight");
-const SLIDER = document.getElementById("slider");
-const slide1 = document.getElementById("slide1");
-const img = document.createElement("img");
-let countClickArrow = 1;
-img.setAttribute("src", "./assets/Slide-2.png",);
+function changeCurrentItem(n) {
+  currentItem = (n + items.length) % items.length;
+}
 
-sliderLeft.addEventListener("click", event => {
-    countClickArrow++;
-    countClickArrow % 2 !== 0 ? img.replaceWith(slide1) : slide1.replaceWith(img);
-  });
-  sliderRight.addEventListener("click", event => {
-    countClickArrow++;
-    countClickArrow % 2 !== 0 ? img.replaceWith(slide1) : slide1.replaceWith(img);
-  });
+function hideItem(direction) {
+  isEnabled = false;
+  items[currentItem].classList.add(direction);
+  items[currentItem].addEventListener('animationend', function () {
+    this.classList.remove('s-active', direction);
+  })
+}
 
-// portfolio
+function showItem(direction) {
+  isEnabled = false;
+  items[currentItem].classList.add('next', direction);
+  items[currentItem].addEventListener('animationend', function () {
+    this.classList.remove('next', direction);
+    this.classList.add('s-active');
+    isEnabled = true;
+    if (currentItem==1) {
+      document.querySelector('.slider').classList.add('blue');
+    }
+    else {
+      document.querySelector('.slider').classList.remove('blue');
+    }
+  })
+}
+
+function previousItem(n) {
+  hideItem('to-right');
+  changeCurrentItem(n - 1);
+  showItem('from-left');
+}
+
+function nextItem(n) {
+  hideItem('to-left');
+  changeCurrentItem(n + 1);
+  showItem('from-right');
+}
+
+document.querySelector('.left').addEventListener('click', function() {
+  if (isEnabled) {
+    previousItem(currentItem);
+  }
+});
+
+document.querySelector('.right').addEventListener('click', function() {
+  if (isEnabled) {
+    nextItem(currentItem);
+  }
+});
+  // portfolio
 const PORTFOLIO_MENU = document.getElementById('porfolio_head1');
 const PORTFOLIO_GAL = document.querySelector('.portfolio__gallery');
 const GALLERY = document.querySelectorAll('#gallery');
@@ -98,8 +149,6 @@ PORTFOLIO_GAL.addEventListener('click', event => {
     event.target.classList.add('activePortfolio');
   }
 })
-
-
 
 // form
 const SUBMIT = document.getElementById('form__submit');
@@ -155,6 +204,3 @@ CLOSE_BTN.addEventListener('click', event => {
   DESCRIPTION.textContent = 'Без описания';
   MESSAGE.classList.add('hidden');
 })
-
-
-

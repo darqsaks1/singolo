@@ -9,11 +9,11 @@
 <body>
 <header class = 'header'>
   <div class ="logo">
-    <h1 class='firstlogo'><strong>SINGOLO</strong><span id = "star">*</span></h1>
+    <h1 class='firstlogo'>SINGOLO<span id = "star">*</span></h1>
   </div>
 <nav class="nav1 js-menu">
     <ul id = 'menuUl'>
-        <li ><span class="dot empty"></span><a href="#slider" class='active'>home</a></li>
+        <li ><span class="dot empty"></span><a href="#home" class='active'>home</a></li>
         <li><span class="dot"></span><a href="#services">services</a></li>
         <li><span class="dot"></span><a href="#portfolio">portfolio</a></li>
         <li><span class="dot"></span><a href="#about">about</a></li>
@@ -22,40 +22,30 @@
 </nav>
 
 </header>
-<main>
-  
-  <section class="slider" id="slider"> 
-    <img
-      src="assets/left.png"
-      alt="t"id="sliderLeft" class="slider_control_left"/> 
-    <img
-      src="assets/right.png"
-      alt="sht" id="sliderRight" class="slider_control_right"/>
-<div class="slide1" id="slide1">
+<main >
+  <section class="slider" id="slider">
+    <div class="navigation" id="home"></div>
+    <img src="assets/left.png" class="left" alt="Предыдущий">
+    <div class="slider-wrapper">
+      <div class="item s-active slide-1">
+        <img src="assets/iPhonevert.png" class="vert" width="240" height="483" alt="Вертикальный мокап">
+        <img src="assets/iPhonehoriz.png" class="horizont first1w" width="484" height="240" alt="Горизонтальный мокап">
+      </div>
+      <div class="item slide-2">
+        <img src="assets/items2.png" class="horizont" width="525" height="521" alt="Второй слайд">
+      </div>
+    </div>
 
-  
-  <div class="slider_images">
-    <img
-      src="assets/iPhonevert.png"
-      class="vertical_phone"
-      alt="vertical phone" id="imgVertical"
-    />
-    <img
-      src="assets/iPhonehoriz.png"
-      class="horisontal_phone"
-      alt="horisontal phone" id="imgHorizontal"
-    />
-  </div>
+    <img src="assets/right.png" class="right" alt="Следующий">
   
 <div class="black_screen_horizont" id="blackHorisont"></div>
 <div class="black_screen_vertical" id="blackVertical"></div>
-
 </section>
-<section>
+<section class='navigation' id = 'services'>
 <div class='footerone'>
   <div class="wrapperHTML1">
     <div class="footer_inner">
-      <div class="footer_title" id = 'services'>
+      <div class="footer_title">
       Our Services
       </div>
       <div class="footer-text">
@@ -144,7 +134,7 @@
 <div class='wrapper'>
   <div class='wrapper_portfolio'>
       <div class=porfolio_promo>
-          <h2 class='porfolio_head' id='portfolio'>Portfolio</h1> 
+          <h2 class='porfolio_head navigation' id='portfolio'>Portfolio</h1> 
           <p class='porfolio_headtext'>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
           <nav class='navigation_buttons' id='porfolio_head1'>
             <button class="button button1 activeButton" >All</button>
@@ -175,8 +165,8 @@
       </div>
   </div>
               <div class='bottomline'></div>
-   <div class="about-us-wrapper">
-                  <h2 class="aboutUsLogo" id = 'about'>About Us</h2>
+   <div class="about-us-wrapper ">
+                  <h2 class="aboutUsLogo navigation" id = 'about'>About Us</h2>
                       <p class="aboutUsText">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, 
                           nisi erat porttitor <span>ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</span></p>
                   <div class="about-us-columns">
@@ -226,7 +216,7 @@
               </div>
               </div>
 </div>
-<div class="quoteContent">
+<div class="quoteContent navigation" id ='contact'>
   <h1>Get a Quote</h1>
   <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris 
   condimentum. Duis mollis, non commodo luctus, nisi erat 
@@ -253,7 +243,7 @@
           <button class="btn" id="close-btn">OK</button>
      </div>
     </div>
-          <div class="contact" id ='contact'>
+          <div class="contact" >
           <h2>Contact Information</h2>
           <p>Quisque hendrerit purus dapibus, ornare nibh vitae,
           viver-ra nibh. Fusce vitae aliquam tellus. Proin sit amet 
