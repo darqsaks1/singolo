@@ -35,36 +35,28 @@ function onScroll(event) {
     }
   });
 }
-//slider black
-const blackVertical = document.getElementById("blackVertical");
-const blackHorisont = document.getElementById("blackHorisont");
-const imgVertical = document.querySelector(".vert");
-const imgHorizontal = document.querySelector(".first1w");
-let countVerticalPhone = 1;
-let countHorizontalPhone = 1;
 
-imgVertical.addEventListener("click", event => {
-  countVerticalPhone++;
-  countVerticalPhone % 2 !== 0
-    ? (blackVertical.style.display = "none")
-    : (blackVertical.style.display = "inline-block");
-});
-imgHorizontal.addEventListener("click", event => {
-  countHorizontalPhone++;
-  countHorizontalPhone % 2 !== 0
-    ? (blackHorisont.style.display = "none")
-    : (blackHorisont.style.display = "inline-block");
-});
-blackVertical.addEventListener("click", event => {
-  countVerticalPhone++;
-  countVerticalPhone % 2 !== 0
-    ? (blackVertical.style.display = "none") : (blackVertical.style.display = "inline-block");
-});
-blackHorisont.addEventListener("click", event => {
-  countHorizontalPhone++;
-  countHorizontalPhone % 2 !== 0
-    ? (blackHorisont.style.display = "none") : (blackHorisont.style.display = "inline-block");
-});
+// BLACKPHONE
+const vert = document.getElementById('VERT');
+const horiz = document.getElementById('HORIZ');
+const vert1 = document.getElementById('VERT1');
+const horiz1 = document.getElementById('HORIZ1');
+
+
+vert.addEventListener('click', (event) => {
+   vert1.classList.toggle('display1'); 
+}); 
+vert1.addEventListener('click', (event) => { 
+   vert1.classList.add('display1'); 
+}); 
+
+horiz.addEventListener('click', (event) => { 
+   horiz1.classList.toggle('display1'); 
+}); 
+horiz1.addEventListener('click', (event) => { 
+   horiz1.classList.add('display1'); 
+}); 
+
 
 // slider corusel corusel eto radost dlya nas!
 let items = document.querySelectorAll('.item');
@@ -203,4 +195,5 @@ CLOSE_BTN.addEventListener('click', event => {
   TEMA.textContent = 'Без темы';
   DESCRIPTION.textContent = 'Без описания';
   MESSAGE.classList.add('hidden');
+  document.getElementById("quote-form").reset();
 })

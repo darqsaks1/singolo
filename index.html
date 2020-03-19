@@ -20,27 +20,34 @@
         <li><span class="dot"></span><a href="#contact">contact</a></li>
     </ul>
 </nav>
-
 </header>
+
 <main >
-  <section class="slider" id="slider">
-    <div class="navigation" id="home"></div>
+
+  <div class="header-imitation">
+  </div>
+ 
+  <section class="slider navigation" id="home">
+ 
     <img src="assets/left.png" class="left" alt="Предыдущий">
     <div class="slider-wrapper">
       <div class="item s-active slide-1">
-        <img src="assets/iPhonevert.png" class="vert" width="240" height="483" alt="Вертикальный мокап">
-        <img src="assets/iPhonehoriz.png" class="horizont first1w" width="484" height="240" alt="Горизонтальный мокап">
+        <div></div>
+        <img src="assets/iPhonevert.png" class="vert" id='VERT' width="240" height="483" alt="Вертикальный мокап">
+        <img src="assets/iPhonehoriz.png" class="horizont"id='HORIZ' width="484" height="240" alt="Горизонтальный мокап">
+        <img src="assets/VPhone.png" class="VPhone back display1"id='VERT1' width="216" height="458" alt="Горизонтальный мокап">
+        <img src="assets/HPhone.png" class="HPhone back display1" id='HORIZ1'width="458" height="216" alt="Горизонтальный мокап">
       </div>
       <div class="item slide-2">
         <img src="assets/items2.png" class="horizont" width="525" height="521" alt="Второй слайд">
       </div>
     </div>
-
     <img src="assets/right.png" class="right" alt="Следующий">
   
 <div class="black_screen_horizont" id="blackHorisont"></div>
 <div class="black_screen_vertical" id="blackVertical"></div>
 </section>
+
 <section class='navigation' id = 'services'>
 <div class='footerone'>
   <div class="wrapperHTML1">
@@ -224,7 +231,7 @@
   dapibus, tellus ac cursus commodo, tortor mauris 
   condimentum nibh.</p>
   <div class="content">
-      <form class="form" action="#" method="post">
+      <form class="form" action="#" id='quote-form' method="post">
           <input type="text" name="username"  class='textInput' id='mane' placeholder="Name (Required)" required>
           <input type="email" name="email-address" class='emailInput' id='mane1' placeholder="Email (Required)" required>
           <input type="text" name="subject"  class='subjectInput' id='form-subject' placeholder="Subject">
@@ -232,7 +239,7 @@
           <button name="submit"  onclick="event.preventDefault()" id='form__submit'>
               <strong>Submit</strong>
           </button>
-          <p class = 'notSubmit oppasity' id='oppasity'>Отсутсвует NAME либо EMAIL</p>
+          <p class = 'notSubmit oppasity' id='oppasity'>Отсутсвует имя либо е-мейл</p>
           
       </form>
       <div id="popup" class="hidden">
