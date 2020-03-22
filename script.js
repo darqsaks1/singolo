@@ -115,32 +115,67 @@ document.querySelector('.right').addEventListener('click', function() {
   }
 });
   // portfolio
-const PORTFOLIO_MENU = document.getElementById('porfolio_head1');
-const PORTFOLIO_GAL = document.querySelector('.portfolio__gallery');
-const GALLERY = document.querySelectorAll('#gallery');
 
 
-PORTFOLIO_MENU.addEventListener('click', event => {
-  if (event.target.classList.contains('button') & !event.target.classList.contains('.activeButton')) {
-    PORTFOLIO_GAL.querySelectorAll('gallery__img').forEach(el => el.classList.remove('activePortfolio'));
-    PORTFOLIO_MENU.querySelectorAll('button').forEach(el => el.classList.remove('activeButton'));
-    event.target.classList.add('activeButton');
-    for (let i = 0; i < GALLERY.length; i++) {
-      let IMG = GALLERY[i].children;
-      for (let j = 0; j < IMG.length; j++) {
-        let n = Math.floor(Math.random() * 12) +1 ;
-        IMG[j].setAttribute('src', `./assets/portfolio${n}.png`);
-      }
+  function changeOrder() {
+    imgPortfolio1[z].classList.add('ordered');
+  }
+
+  let imgPortfolio1 = document.querySelectorAll('.gallery img');
+  let tabsPortfolio = document.querySelectorAll('.portfolio a');
+  for (let i = 0; i<tabsPortfolio.length; i++) {
+    tabsPortfolio[i].addEventListener('click', function() {
+     
+        if (tabsPortfolio[i].querySelector('li').getAttribute('class')!=='active'){
+          for (let k = 0; k<tabsPortfolio.length; k++){
+            tabsPortfolio[k].querySelector('li').classList.remove('active');
+          }
+          tabsPortfolio[i].querySelector('li').classList.add('active');
+          for (let z = 0; z<imgPortfolio1.length; z++){
+            setTimeout(() => imgPortfolio1[z].classList.remove('ordered'),300);
+            setTimeout(() => imgPortfolio1[z].classList.remove('order-3'),300);
+            setTimeout(() => imgPortfolio1[z].classList.remove('order-2'),300);
+            setTimeout(() => imgPortfolio1[z].classList.remove('order-1'),300);
+      
+            if (tabsPortfolio[i].querySelector('li').innerHTML.match(/[A-za-z]+/)[0]==='Web') {
+              if (imgPortfolio1[z].getAttribute('class').match(/[A-za-z]+/)[0]==='Web') {
+                setTimeout(() => imgPortfolio1[z].classList.add('ordered'),300);
+              }
+              setTimeout(() => imgPortfolio1[imgPortfolio1.length-1].classList.add('order-3'),300);
+            };
+            if (tabsPortfolio[i].querySelector('li').innerHTML.match(/[A-za-z]+/)[0]==='Graphic') {
+              if (imgPortfolio1[z].getAttribute('class').match(/[A-za-z]+/)[0]==='Graphic') {
+                setTimeout(() => imgPortfolio1[z].classList.add('ordered'),300);
+              }
+              setTimeout(() => imgPortfolio1[imgPortfolio1.length-2].classList.add('order-3'),300);
+              setTimeout(() => imgPortfolio1[imgPortfolio1.length-1].classList.add('order-2'),300);
+            };
+            if (tabsPortfolio[i].querySelector('li').innerHTML.match(/[A-za-z]+/)[0]==='Artwork') {
+              if (imgPortfolio1[z].getAttribute('class').match(/[A-za-z]+/)[0]==='Artwork') {
+                setTimeout(() => imgPortfolio1[z].classList.add('ordered'),300);
+              }
+              setTimeout(() => imgPortfolio1[imgPortfolio1.length-3].classList.add('order-3'),300);
+              setTimeout(() => imgPortfolio1[imgPortfolio1.length-2].classList.add('order-2'),300);
+              setTimeout(() => imgPortfolio1[imgPortfolio1.length-1].classList.add('order-1'),300);
+            };
+          
+          }
+        }
+    })
+  }
+//              portfolio_image add order
+
+for (let r = 0; r<imgPortfolio1.length; r++){
+  imgPortfolio1[r].addEventListener('click', function() {
+    for (let h = 0; h<imgPortfolio1.length; h++){
+      imgPortfolio1[h].classList.remove('activePortfolio');
+      imgPortfolio1[r].classList.add('activePortfolio');
     }
-  }
-})
-PORTFOLIO_GAL.addEventListener('click', event => {
 
-  if (event.target.classList[0] == 'gallery__img') {
-    PORTFOLIO_GAL.querySelectorAll('.gallery__img').forEach(el => el.classList.remove('activePortfolio'));
-    event.target.classList.add('activePortfolio');
-  }
-})
+  });
+}
+
+
 
 // form
 const SUBMIT = document.getElementById('form__submit');

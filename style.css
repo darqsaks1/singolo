@@ -1182,26 +1182,163 @@ p.oppasity {
     display:none;
 }  
 
-#home {
-    scroll-margin-top: 96px; 
-}
 
 
-#services {
-    scroll-margin-top: 96px; 
+
+
+
+
+
+
+.portfolio {
+  display: flex;
+  overflow: hidden;
+
+  background-color: rgb(45, 48, 58);
+  border-bottom: 6px solid rgb(50, 55, 70);
 }
 
-#portfolio {
-    scroll-margin-top: 96px; 
+.portfolio-row {
+  height: 400px;
+
+  transition: height 0.5s;
 }
 
-#about {
-    scroll-margin-top: 96px; 
+.portfolio-full {
+  height: 863px;
+
+  transition: height 0.5s;
+}
+.portfolio .wrapper {
+  width: 100%;
+  padding: 62px 40px 0px 40px;
+
+  color: #666d89;
 }
 
-#contact {
-    scroll-margin-top: 96px; 
+.portfolio h2 {
+  letter-spacing: 0.3px;
 }
-section {
-    scroll-margin-top: 96px;
+
+.portfolio p {
+  letter-spacing: -0.21px;
 }
+
+.portfolio ul {
+  display: flex;
+  padding: 0px;
+
+  font-size: 12px;
+  font-weight: 400;
+  color: #e8b8b5;
+  list-style: none;
+  letter-spacing: -0.230px;
+}
+
+.portfolio li {
+  margin-top: 9px;
+  margin-right: 9px;
+  margin-left: 1px;
+  padding: 3px 7.3px;
+
+  text-align: center;
+  letter-spacing: -0.31px;
+
+  border: 1px solid #666d89;
+  border-radius: 5px;
+}
+
+.portfolio li:hover {
+  border-color: white;
+  transition: 0.5s;
+}
+
+.portfolio a {
+  color: #666d89;
+  text-decoration: none;
+}
+
+.portfolio li:hover {
+  color: white;
+
+  transition: 0.5s;
+}
+
+.portfolio .active {
+  border: 1px solid white;
+  color: white;
+}
+
+.gallery {
+  display: flex;
+  width: 100%;
+  padding-bottom: 73px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.gallery img {
+  width: 220px;
+  height: 187px;
+  margin-top: 20px;
+}
+
+.gallery img:nth-of-type(-n+4) {
+  margin-top: 19px;
+}
+
+.ordered{
+  order: -4;
+}
+
+.order-3 {
+  order: -3;
+}
+
+.order-2 {
+  order: -2;
+}
+
+.order-1 {
+  order: -1;
+}
+
+.change-animation {
+  animation: change-sort 0.6s !important;
+}
+
+@keyframes change-sort {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.clicked-img {
+  box-sizing: border-box;
+
+  border: 5px #F06C64 solid;
+
+  transition: border 0.5s;
+}
+.portfolioH2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #666d89;
+}
+.portfolioP {
+    padding-top: 17px;
+  
+    font-size: 18px;
+    font-weight: 200;
+    color: #767e9e;
+    letter-spacing: -0.05px;
+    line-height: 1.667;
+  }
+  
