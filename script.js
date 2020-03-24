@@ -139,7 +139,7 @@ document.querySelector('.right').addEventListener('click', function() {
       
             if (tabsPortfolio[i].querySelector('li').innerHTML.match(/[A-za-z]+/)[0]==='Web') {
               if (imgPortfolio1[z].getAttribute('class').match(/[A-za-z]+/)[0]==='Web') {
-                setTimeout(() => imgPortfolio1[z].classList.add('ordered'),300);
+                setTimeout(() => imgPortfolio1[z].classLisitems1t.add('ordered'),300);
               }
               setTimeout(() => imgPortfolio1[imgPortfolio1.length-1].classList.add('order-3'),300);
             };
