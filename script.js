@@ -5,6 +5,19 @@ MENU.addEventListener('click', (event) => {
    MENU.querySelectorAll('a').forEach(el => el.classList.remove('active'));
     event.target.classList.add('active'); 
 });
+//----------------
+const menuMobile = document.getElementById('menuMobile');
+
+menuMobile.addEventListener('click', (event) => {
+  menuMobile.querySelectorAll('a').forEach(el => el.classList.remove('active'));
+    event.target.classList.add('active'); 
+});
+//---------------
+const logoMobile = document.querySelector('firstlogo1');
+const buttonLogo = document.getElementById('buttonLogo');
+buttonLogo.addEventListener('click', (event) => {
+  logoMobile.classList.toggle('displaynone');  
+});
 //scroll- header
  window.onscroll = function() {myFunction()};
 let header = document.querySelector(".header");
@@ -23,7 +36,8 @@ function onScroll(event) {
   const curPos = window.scrollY;
   const divs = document.querySelectorAll('.navigation');
   const links = document.querySelectorAll('#menuUl a');
-
+  const divs1 = document.querySelectorAll('.NAV1');
+  const links1 = document.querySelectorAll('.menu__box a');
   divs.forEach ((el) => {
     if (el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > curPos) {
       links.forEach((a) => {
@@ -34,7 +48,19 @@ function onScroll(event) {
       })
     }
   });
+  divs1.forEach ((el) => {
+    if (el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > curPos) {
+      links1.forEach((a) => {
+        a.classList.remove('active');
+        if(el.getAttribute('id') === a.getAttribute('href').substring(1)) {
+          a.classList.add('active');
+        }
+      })
+    }
+  });
 }
+
+
 
 // BLACKPHONE
 const vert = document.getElementById('VERT');
@@ -232,3 +258,6 @@ CLOSE_BTN.addEventListener('click', event => {
   MESSAGE.classList.add('hidden');
   document.getElementById("quote-form").reset();
 })
+
+
+// media mobile// 
