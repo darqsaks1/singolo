@@ -350,7 +350,8 @@ margin-bottom: 10px;
 }
 
 .items_text {
-width: 220px;
+width: 100%;
+max-width:220px;
 font-size: 12px;
 font-weight: 300;
 line-height: 1.797;
@@ -408,7 +409,6 @@ bottom: 5px;
   left: -3px;
 }
 ________________________________________
-
 
 
 
@@ -625,7 +625,8 @@ transition: 1s;
       }
       
       .about-us-text {
-          width: 300px;
+        width: 100%;
+          max-width: 300px;
           height: 175px;
           font-size: 12px;
           line-height: 22px;
@@ -1484,6 +1485,10 @@ header {
 .footer_title {
   padding-left: 50px;
 }
+.items_text { 
+  max-width: 100%;
+  padding-left: 20px;
+}
 .footer-text {
   padding-left: 30px;
   width: 90%;
@@ -1534,7 +1539,7 @@ header {
 
 .imgAboutUs {
   width: 218.94px;
-height: 218.94px;
+  height: 218.94px;
 }
 
 .workers .card {
@@ -1658,7 +1663,7 @@ header {
 
 
   #menu__toggle:checked ~ .menu__btn > span {
-    transform: rotate(180deg);
+    transform: rotate(90deg);
   }
   
 
@@ -1783,14 +1788,18 @@ header {
     top: 0px;
   }
   .HPhone {
-    position: relative;
-    top: -97px;
-    left: 20px;
-    width: 168.1px;
-    height: auto;
-    margin: 0px;
+  position: relative;
+  top: -95px;
+  left: 12px;
+  width: 168.1px;
+  height: auto;
+  margin: 0px;
 }
 /* --------------------SERVICES------------------*/
+.items_text { 
+  max-width: 100%;
+  padding-left: 20px;
+}
 .servicesOne {
     width: 100%;
     height: auto;
@@ -1798,7 +1807,8 @@ header {
 
   .wrapperHTML1 {
     padding: 29px 41.6px 0px 31.6px;
-    padding-bottom:600px;
+    padding-bottom:630px;
+    height: auto;
   }
 
   .footer_grid {
@@ -1815,10 +1825,16 @@ header {
   display: flex;
   justify-content: stretch;
   text-align: stretch;
+  position: relative;
+  top: -10px;
  
    width:80%;
     max-width: inherit;
     height: auto;
+}
+.footer_inner {
+  position: relative;
+  top: -40px;
 }
 /* PORTFOLIO */
 .portfolio {
@@ -1853,8 +1869,10 @@ header {
 .imgAboutUs {
   width: auto;
 }
-.about-us-wrapper {
-  padding: 36px 31px 34px 31px;
+.card p {
+  padding-top: 1px;
+  max-width: 768px;
+  width: 100%;
 }
 
 .about-us-wrapper {
@@ -1883,26 +1901,44 @@ header {
 }
 
 .workers {
-  margin-top: 120px;
+  margin-top: 150px;
   height: auto;
   flex-wrap: wrap;
 }
+.aboutUsLogo {
+  padding-top: 40px;
+}
+.aboutUsText { 
+  
+}
+.card > img {
+  width: 100%;
+  height: auto;
+}
 /*  ------ FOOOOOOOOOOOORM -----------*/ 
 .form button {
-  display:none
+  left: 100px
 }
 p.notSubmit {
-  display: none;
+    left: -600px;
+    width: auto;
+    font-size: 18px;
+    padding: 10px;
+    height: 50px;
+}
 }
 .quoteContent {
   height: auto;
+  padding-bottom:40px;
 }
 #contact2 {
   height: auto;
 }
 
 .quoteContent {
-  padding: 47px 29.6px 0px 29.6px;
+  height: auto;
+  padding-bottom: 60px;
+  
 }
 
 .content {
@@ -1910,63 +1946,38 @@ p.notSubmit {
   margin-top: 21px;
 }
 
-form {
-  width: 100%;
+.content form { 
+  width: 90%;
+  top: 180px;
+  padding-bottom: 0px;
+  margin-top: 50px;
+}
+  .quoteContent h1 {
+    padding-top: 30px;
 }
 
-input {
-  margin-bottom: 12px;
+.contact {
+  width: 80.87%;
+  margin-top: 100px;
+  padding-left: 20px
 }
 
-textarea {
-  height: 135px;
-  margin-bottom: 14px;
+
+.contact ul li a {
+  
 }
 
-.submit-form {
-  width: 100%;
-  flex-wrap: wrap;
+
+.copyRight {
+  display:none;
 }
 
-input[type=submit] {
-  width: 100%;
-  height: 50px;
-  margin-bottom: 7px;
-}
 
-.submit-form p {
-  width: 100%;
-  height: 20px;
-  margin: 0;
-  transition: 0.5s;
-  text-align: center;
-  color: wheat;
-}
-
-.contacts {
-  width: 100%;
-  margin: 5px 0px 0px 0px;
-  height: auto;
-}
-
-.contacts p {
-  width: 100%;
-  padding: 0px;
-}
-
-.links {
-  width: 100%;
-  height: auto;
-  margin-top: 20px;
-  padding-bottom: 38px;
-}
-
-footer .wrapper {
+.footer_contacts {
   justify-content: center;
 }
 
-.footer span {
-  display: none;
-}
+
+/* QOUTE CONTEXT: */
 
 }
