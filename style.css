@@ -474,10 +474,7 @@ span {
   top: -5px;
   width: 100%
 }     
-.about-us-columns > div {
-          width: 303px;
-          height: 510px;
-      }
+.about-us-columns > div 
       
       .ico-facebook {
           background-image: url(./assets/facebook.png);
@@ -1737,7 +1734,7 @@ header {
 
   .slide-2 {
     justify-content: center;
-    max-height: 181px;
+    height:auto;
   }
 
   .left-phone, .right-phone {
@@ -1806,7 +1803,7 @@ header {
 
   .wrapperHTML1 {
     padding: 29px 41.6px 0px 31.6px;
-    padding-bottom:630px;
+   
     height: auto;
   }
 
@@ -1814,10 +1811,10 @@ header {
     width:100%;
     margin-top: 22px;
     padding-bottom: 20px;
+    height: auto;
   }
 .items_text p {
    width:100%;
-  
     min-height: 35px;
   }
 .footer_items {
@@ -1833,7 +1830,6 @@ header {
 }
 .footer_inner {
   position: relative;
-  top: -40px;
 }
 /* PORTFOLIO */
 .portfolio {
@@ -1893,6 +1889,7 @@ header {
 
 .card p {
   padding-top: 1px;
+  height: auto;
 }
 
 .social {
@@ -1900,7 +1897,7 @@ header {
 }
 
 .workers {
-  margin-top: 150px;
+  margin-top: 130px;
   height: auto;
   flex-wrap: wrap;
 }
@@ -1913,6 +1910,9 @@ header {
 .card > img {
   width: 100%;
   height: auto;
+}
+.icons {
+  margin-bottom: 15px;
 }
 /*  ------ FOOOOOOOOOOOORM -----------*/ 
 .form button {
@@ -1943,20 +1943,21 @@ p.notSubmit {
   flex-wrap: wrap;
   margin-top: 21px;
 }
+.quoteContent p {
+  height:auto !important ;
+}
+.content form {  
+    width: 90%;
+    padding-bottom: 0px;
 
-.content form { 
-  width: 90%;
-  top: 180px;
-  padding-bottom: 0px;
-  margin-top: 50px;
+    height: auto;
 }
   .quoteContent h1 {
-    padding-top: 30px;
+   
 }
 
 .contact {
   width: 80.87%;
-  margin-top: 100px;
   padding-left: 20px
 }
 
@@ -1978,6 +1979,29 @@ p.notSubmit {
 
 /* QOUTE CONTEXT: */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 @media only screen and (max-width: 374px) {  
   body {
@@ -1993,7 +2017,10 @@ p.notSubmit {
   #menuUl {
     display: none;
   }
-  
+  .footer_grid {
+    height: auto;
+  }
+
   .logo {
       display:none;
     }
@@ -2145,25 +2172,25 @@ p.notSubmit {
     }
      .VPhone {
       position: relative;
-      width: 65.24px;
+      width: 60.24px;
       height: auto;
-      top: -170px;
-      left: -5px;
+      top: -110px;
+      left: 13px;
       margin: 0px;
   }
     .vert {
       position: relative;
-      top: -20px;
-      width: 70.24px;
+      top: 20px;
+      width: 60.24px;
       height: auto;
       margin: 0px !important;
-      left: -5px;
+      left: 20px;
   }
     .horizont {
       position: relative;
       top: -0px;
       left: 15px;
-      width: 150.57px;
+      width: 130.57px;
       height: auto;
       margin-bottom: 5.9px;
       
@@ -2176,189 +2203,193 @@ p.notSubmit {
     position: relative;
     top: -80px;
     left: 12px;
-    width: 150.57px;
+    width: 130.57px;
     height: auto;
     margin: 0px;
   }
   /* --------------------SERVICES------------------*/
-  .items_text { 
-    max-width: 100%;
-    padding-left: 20px;
+.items_text { 
+  max-width: 100%;
+  padding-left: 20px;
+}
+.servicesOne {
+    width: 100%;
+    height: auto;
   }
-  .servicesOne {
-      width: 100%;
-      height: auto;
-    }
-  
-    .wrapperHTML1 {
-      padding: 29px 41.6px 0px 31.6px;
-      padding-bottom:900px;
-      height: auto;
-    }
-  
-    .footer_grid {
-      width:100%;
-      margin-top: 22px;
-      padding-bottom: 20px;
-    }
-  .items_text p {
-     width:100%;
-    
-      min-height: 35px;
-    }
-  .footer_items {
-    display: flex;
-    justify-content: stretch;
-    text-align: stretch;
-    position: relative;
-    top: -10px;
+
+  .wrapperHTML1 {
+    padding: 29px 41.6px 0px 31.6px;
    
-     width:80%;
-      max-width: inherit;
-      height: auto;
-  }
-  .footer_inner {
-    position: relative;
-    top: -40px;
-  }
-  /* PORTFOLIO */
-  .portfolio {
-    max-height: max-content;
-    height: inherit;
-    
-  }
-  .imghidden {
-    display:none;
-  }
-  .portfolio .wrapper {
-    padding: 45px 30px 28px 30px;
-  }
-  
-  .portfolio ul {
-    margin-top: 5px;
-  }
-  
-  .gallery {
-    margin-top: 10px;
-    padding-bottom: 0px;
-    overflow: hidden;
-  }
-  
-  .portfolio img {
-    width: calc((100% - 13px) / 2);
-    margin-top: 14px !important;
     height: auto;
   }
+
+  .footer_grid {
+    width:100%;
+    margin-top: 22px;
+    padding-bottom: 20px;
+    height: auto;
+  }
+.items_text p {
+   width:100%;
+    min-height: 35px;
+  }
+.footer_items {
+  display: flex;
+  justify-content: stretch;
+  text-align: stretch;
+  position: relative;
+  top: -10px;
+ 
+   width:80%;
+    max-width: inherit;
+    height: auto;
+}
+.footer_inner {
+  position: relative;
+}
+/* PORTFOLIO */
+.portfolio {
+  max-height: max-content;
+  height: inherit;
   
-  /* ABOUT -----------------------*/
-  .imgAboutUs {
+}
+.imghidden {
+  display:none;
+}
+.portfolio .wrapper {
+  padding: 45px 30px 28px 30px;
+}
+
+.portfolio ul {
+  margin-top: 5px;
+}
+
+.gallery {
+  margin-top: 10px;
+  padding-bottom: 0px;
+  overflow: hidden;
+}
+
+.portfolio img {
+  width: calc((100% - 13px) / 2);
+  margin-top: 14px !important;
+  height: auto;
+}
+
+/* ABOUT -----------------------*/
+.imgAboutUs {
+  width: auto;
+}
+.card p {
+  padding-top: 1px;
+  max-width: 768px;
+  width: 100%;
+}
+
+.about-us-wrapper {
+  height: auto;
+  width:100%;
+}
+
+.card {
+  width: 100%;
+  padding-top:0px;
+}
+
+
+
+.card > img {
+  width:100%;
+  height: auto;
+}
+
+.card p {
+  padding-top: 1px;
+  height: auto;
+}
+
+.social {
+  margin-top: 12px;
+}
+
+.workers {
+  margin-top: 130px;
+  height: auto;
+  flex-wrap: wrap;
+}
+.aboutUsLogo {
+  padding-top: 40px;
+}
+.aboutUsText { 
+  
+}
+.card > img {
+  width: 100%;
+  height: auto;
+}
+.icons {
+  margin-bottom: 15px;
+}
+/*  ------ FOOOOOOOOOOOORM -----------*/ 
+.form button {
+  left: 100px
+}
+p.notSubmit {
+    left: -600px;
     width: auto;
-  }
-  .card p {
-    padding-top: 1px;
-    max-width: 768px;
-    width: 100%;
-  }
+    font-size: 18px;
+    padding: 10px;
+    height: 50px;
+}
+.quoteContent {
+  height: auto;
+  padding-bottom:40px;
+}
+#contact2 {
+  height: auto;
+}
+
+.quoteContent {
+  height: auto;
+  padding-bottom: 60px;
   
-  .about-us-wrapper {
-    height: auto;
-    width:100%;
-  }
-  
-  .card {
-    width: 100%;
-    padding-top:0px;
-  }
-  
-  
-  
-  .card > img {
-    width:100%;
-    height: auto;
-  }
-  
-  .card p {
-    padding-top: 1px;
-  }
-  
-  .social {
-    margin-top: 12px;
-  }
-  
-  .workers {
-    margin-top: 150px;
-    height: auto;
-    flex-wrap: wrap;
-  }
-  .aboutUsLogo {
-    padding-top: 40px;
-  }
-  .aboutUsText { 
-    
-  }
-  .card > img {
-    width: 100%;
-    height: auto;
-  }
-  /*  ------ FOOOOOOOOOOOORM -----------*/ 
-  .form button {
-    left: 100px
-  }
-  p.notSubmit {
-      left: -600px;
-      width: auto;
-      font-size: 18px;
-      padding: 10px;
-      height: 50px;
-  }
-  .quoteContent {
-    height: auto;
-    padding-bottom:40px;
-  }
-  #contact2 {
-    height: auto;
-  }
-  
-  .quoteContent {
-    height: auto;
-    padding-bottom: 60px;
-    
-  }
-  
-  .content {
-    flex-wrap: wrap;
-    margin-top: 21px;
-  }
-  
-  .content form { 
+}
+
+.content {
+  flex-wrap: wrap;
+  margin-top: 21px;
+}
+.quoteContent p {
+  height:auto !important ;
+}
+.content form {  
     width: 90%;
-    top: 180px;
     padding-bottom: 0px;
-    margin-top: 50px;
-  }
-    .quoteContent h1 {
-      padding-top: 30px;
-  }
+
+    height: auto;
+}
+  .quoteContent h1 {
+   
+}
+
+.contact {
+  width: 80.87%;
+  padding-left: 20px
+}
+
+
+.contact ul li a {
   
-  .contact {
-    width: 80.87%;
-    margin-top: 100px;
-    padding-left: 20px
-  }
-  
-  
-  .contact ul li a {
-    
-  }
-  
-  
-  .copyRight {
-    display:none;
-  }
-  
-  
-  .footer_contacts {
-    justify-content: center;
-  }
-  
+}
+
+
+.copyRight {
+  display:none;
+}
+
+
+.footer_contacts {
+  justify-content: center;
+}
+
 }
