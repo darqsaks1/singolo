@@ -1573,7 +1573,8 @@ textarea {
   margin-left: -650px;
   width: 90%;
   height: 40px;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom:10px;
 }
 
 .contact  p {
@@ -1593,6 +1594,14 @@ textarea {
   width: auto;
   height: auto;
 }
+
+.bg_bottom {
+  width: 100%;
+  height: 2px;
+  background-color: #ea676b;
+}
+
+
 
 }
 @media only screen and (max-width: 767px) and (min-width: 375px) { 
