@@ -1570,7 +1570,10 @@ textarea {
 } 
 
 #form__submit {
-  margin-left: -150px;
+  margin-left: -650px;
+  width: 90%;
+  height: 40px;
+  margin-top: 20px;
 }
 
 .contact  p {
@@ -1585,8 +1588,10 @@ textarea {
   margin-bottom: 16px;
 }
 #oppasity {
-  position: absolute;
-  margin-left: 420px;
+  /* position: fixed; */
+  margin-left: 450px;
+  width: auto;
+  height: auto;
 }
 
 }
@@ -1916,8 +1921,13 @@ header {
 }
 /*  ------ FOOOOOOOOOOOORM -----------*/ 
 .form button {
-  left: 100px
+  left: 10px;
+  height: 30px;
+  width: 90%;
+  margin-bottom: 50px;
+  bottom: 2px;
 }
+
 p.notSubmit {
     left: -600px;
     width: auto;
@@ -2332,7 +2342,11 @@ p.notSubmit {
 }
 /*  ------ FOOOOOOOOOOOORM -----------*/ 
 .form button {
-  left: 100px
+  left: 10px;
+  height: 30px;
+  width: 90%;
+  margin-bottom: 50px;
+  bottom: 2px;
 }
 p.notSubmit {
     left: -600px;
