@@ -1116,8 +1116,8 @@ button.activeButton {
   color: black;
   position: relative;
   top: 20%;
-  width:76%;
-  height: 700px;
+  width:500px;
+  height: 350px;
   border: 2px solid #a1a3a6;
   text-align: center;
   z-index: 1;
@@ -1136,7 +1136,7 @@ button.activeButton {
   font-style: italic  ;
   width: 150px;
   position: relative;
-  top:-250px;
+  top:170px;
 }
 #close-btn:hover {
   color: white; 
