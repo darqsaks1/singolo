@@ -163,7 +163,7 @@
   <div class="wrapper">
       <h2 class='portfolioH2'>Portfolio</h2>
       <p class='portfolioP'>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-    <ul>
+    <ul class= "portfolio__menu">
       <a href="#" onclick="event.preventDefault()"><li class="active">All</li></a>
       <a href="#" onclick="event.preventDefault()"><li>Web Design</li></a>
       <a href="#" onclick="event.preventDefault()"><li>Graphic Design</li></a>
@@ -250,7 +250,8 @@
   condimentum nibh.</p>
   <div class="content">
       <form class="form" action="#" id='quote-form' method="post">
-          <input type="text" name="username"  class='textInput' id='mane' placeholder="Name (Required)" required>
+          <input type="text" name="username"  class='textInput' id='mane' placeholder="Name (Required)" required
+          pattern = "[A-Za-zА-Яа-я-\s']{1,35}">
           <input type="email" name="email-address" class='emailInput' id='mane1' placeholder="Email (Required)" required>
           <input type="text" name="subject"  class='subjectInput' id='form-subject' placeholder="Subject">
           <textarea name="  " id="textarea" cols="30" rows="10"  class='textAreaInput' placeholder="Describe your project in detail..."></textarea>

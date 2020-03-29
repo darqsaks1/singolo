@@ -1276,9 +1276,10 @@ color: white;
 transition: 0.5s;
 }
 
-.portfolio .active {
-border: 1px solid white;
-color: white;
+.portfolio__menu li.active{
+  color: white;
+  background-color: #2d303a;
+  border: 1px solid white;
 }
 
 .gallery {
@@ -1298,22 +1299,6 @@ margin-top: 20px;
 
 .gallery img:nth-of-type(-n+4) {
 margin-top: 19px;
-}
-
-.ordered{
-order: -4;
-}
-
-.order-3 {
-order: -3;
-}
-
-.order-2 {
-order: -2;
-}
-
-.order-1 {
-order: -1;
 }
 
 
@@ -1363,7 +1348,14 @@ transition: border 0.5s;
 @media only screen and (max-width: 1019px) and (min-width: 768px) { 
 body {
   width: 100%;
-  min-width: inherit;
+  min-width: inherit;.HPhone {
+    position: absolute;
+    top: -1px;
+    left: 14px;
+    width: 168.1px;
+    height: auto;
+    margin: 0px;
+}
 }
 header {
   width: 100%;
@@ -1798,12 +1790,12 @@ header {
     top: 0px;
   }
   .HPhone {
-  position: relative;
-  top: -95px;
-  left: 12px;
-  width: 168.1px;
-  height: auto;
-  margin: 0px;
+    position: absolute;
+    top: -1px;
+    left: 14px;
+    width: 168.1px;
+    height: auto;
+    margin: 0px;
 }
 /* --------------------SERVICES------------------*/
 .items_text { 
@@ -2179,22 +2171,22 @@ p.notSubmit {
     .left-phone {
       max-width: 90px;
       position: relative;
-      left: 5px;
-      top: 9px;
-    }
+      left: -12px;
+      top: -20px;
+  }
   
-    .right-phone {
-      max-width: 174px;
-      max-height: 134px;
-      position: relative;
-      right: 8px;
-    }
-     .VPhone {
-      position: relative;
-      width: 60.24px;
+  .right-phone {
+    max-width: 174px;
+    max-height: 134px;
+    position: relative;
+    right: px;
+}
+    .VPhone {
+      position: absolute;
+      width: 54.24px;
       height: auto;
-      top: -110px;
-      left: 13px;
+      top: 20px;
+      left: 20px;
       margin: 0px;
   }
     .vert {
@@ -2219,12 +2211,12 @@ p.notSubmit {
       top: 0px;
     }
     .HPhone {
-    position: relative;
-    top: -80px;
-    left: 12px;
-    width: 130.57px;
-    height: auto;
-    margin: 0px;
+      position: absolute;
+      top: -4px;
+      left: 12px;
+      width: 130.57px;
+      height: auto;
+      margin: 0px;
   }
   /* --------------------SERVICES------------------*/
 .items_text { 

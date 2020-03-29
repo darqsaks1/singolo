@@ -142,67 +142,32 @@ document.querySelector('.right').addEventListener('click', function() {
 });
   // portfolio
 
-
-  function changeOrder() {
-    imgPortfolio1[z].classList.add('ordered');
-  }
-
+  const MENU2P = document.querySelector(".portfolio__menu");
+  let array = document.querySelector(".gallery");
   let imgPortfolio1 = document.querySelectorAll('.gallery img');
-  let tabsPortfolio = document.querySelectorAll('.portfolio a');
-  for (let i = 0; i<tabsPortfolio.length; i++) {
-    tabsPortfolio[i].addEventListener('click', function() {
-     
-        if (tabsPortfolio[i].querySelector('li').getAttribute('class')!=='active'){
-          for (let k = 0; k<tabsPortfolio.length; k++){
-            tabsPortfolio[k].querySelector('li').classList.remove('active');
-          }
-          tabsPortfolio[i].querySelector('li').classList.add('active');
-          for (let z = 0; z<imgPortfolio1.length; z++){
-            setTimeout(() => imgPortfolio1[z].classList.remove('ordered'),300);
-            setTimeout(() => imgPortfolio1[z].classList.remove('order-3'),300);
-            setTimeout(() => imgPortfolio1[z].classList.remove('order-2'),300);
-            setTimeout(() => imgPortfolio1[z].classList.remove('order-1'),300);
-      
-            if (tabsPortfolio[i].querySelector('li').innerHTML.match(/[A-za-z]+/)[0]==='Web') {
-              if (imgPortfolio1[z].getAttribute('class').match(/[A-za-z]+/)[0]==='Web') {
-                setTimeout(() => imgPortfolio1[z].classLisitems1t.add('ordered'),300);
-              }
-              setTimeout(() => imgPortfolio1[imgPortfolio1.length-1].classList.add('order-3'),300);
-            };
-            if (tabsPortfolio[i].querySelector('li').innerHTML.match(/[A-za-z]+/)[0]==='Graphic') {
-              if (imgPortfolio1[z].getAttribute('class').match(/[A-za-z]+/)[0]==='Graphic') {
-                setTimeout(() => imgPortfolio1[z].classList.add('ordered'),300);
-              }
-              setTimeout(() => imgPortfolio1[imgPortfolio1.length-2].classList.add('order-3'),300);
-              setTimeout(() => imgPortfolio1[imgPortfolio1.length-1].classList.add('order-2'),300);
-            };
-            if (tabsPortfolio[i].querySelector('li').innerHTML.match(/[A-za-z]+/)[0]==='Artwork') {
-              if (imgPortfolio1[z].getAttribute('class').match(/[A-za-z]+/)[0]==='Artwork') {
-                setTimeout(() => imgPortfolio1[z].classList.add('ordered'),300);
-              }
-              setTimeout(() => imgPortfolio1[imgPortfolio1.length-3].classList.add('order-3'),300);
-              setTimeout(() => imgPortfolio1[imgPortfolio1.length-2].classList.add('order-2'),300);
-              setTimeout(() => imgPortfolio1[imgPortfolio1.length-1].classList.add('order-1'),300);
-            };
-          
-          }
-        }
-    })
-  }
-//              portfolio_image add order
-
-for (let r = 0; r<imgPortfolio1.length; r++){
-  imgPortfolio1[r].addEventListener('click', function() {
-    for (let h = 0; h<imgPortfolio1.length; h++){
-      imgPortfolio1[h].classList.remove('activePortfolio');
-      imgPortfolio1[r].classList.add('activePortfolio');
-    }
-
+ 
+  MENU2P.addEventListener('click', (event)=>{
+    MENU2P.querySelectorAll('li').forEach(el => el.classList.remove('active'));
+    event.target.classList.add('active');
+    let newArray = [...array.querySelectorAll(".img12")];
+    newArray.unshift(newArray.pop());
+    newArray.forEach( pic => array.append(pic) );
   });
-}
 
 
 
+// 
+  for (let r = 0; r<imgPortfolio1.length; r++){
+    imgPortfolio1[r].addEventListener('click', function() {
+      for (let h = 0; h<imgPortfolio1.length; h++){
+        imgPortfolio1[h].classList.remove('activePortfolio');
+        imgPortfolio1[r].classList.add('activePortfolio');
+      }
+  
+    });
+  }
+
+  
 // form
 const SUBMIT = document.getElementById('form__submit');
 const MESSAGE = document.getElementById('popup');
@@ -213,7 +178,8 @@ const DESCRIPTION = document.getElementById('popup-description'),
       FORM_DESC = document.getElementById('textarea');
       MANE = document.getElementById('mane');
       MANE1 = document.getElementById('mane1');
-      pClass = document.getElementById('oppasity')
+      pClass = document.getElementById('oppasity');
+
 SUBMIT.addEventListener('click', event => {
   if (FORM_SUBJECT.value !== '' ) {
     TEMA.textContent = `Тема: ${FORM_SUBJECT.value}`; 
